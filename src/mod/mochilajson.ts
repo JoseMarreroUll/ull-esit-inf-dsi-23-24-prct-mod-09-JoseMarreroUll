@@ -2,6 +2,9 @@ import fs from 'fs';
 
 import { Mochila } from './mochila.js';
 
+/**
+ * Clase que representa la información de una mochila leída a través de un fichero JSON
+ */
 export class MochilaJSON extends Mochila {
   protected initCapacidad(fichero: string): void {
     const data = fs.readFileSync(fichero, 'utf-8');

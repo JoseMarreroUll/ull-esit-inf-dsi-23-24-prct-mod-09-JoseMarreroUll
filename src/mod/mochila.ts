@@ -1,9 +1,16 @@
 import { Objeto } from './objeto.js';
 
+/**
+ * Clase abstracta que representa una Mochila
+ * 
+ * @param capacidad Capacidad de la mochila
+ * @param numElementos Número de elementos de la mochila
+ * @param elementos Array de la interfaz Objeto que almacena información de cada objeto de la mochila
+ */
 export abstract class Mochila {
   capacidad: number;
   numElementos: number;
-  elementos:Objeto[] = [];
+  elementos: Objeto[] = [];
   
   public procesar(fichero :string): [number[], number[]] {
     this.initCapacidad(fichero);
