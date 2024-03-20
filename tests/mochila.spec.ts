@@ -14,7 +14,7 @@ describe('Tests de la Mochila', () => {
     expect(aux).to.deep.equal(solucion);
   });
   
-  it('La función procesar devuelve correctamente dos arrays uno con los beneficios de los elementos de la mochila y otro con los pesos de los elementos de la mochila. (JSON)', () => {
+  it('La función procesar devuelve correctamente dos arrays uno con los beneficios de los elementos de la mochila y otro con los pesos de los elementos de la mochila. (CSV)', () => {
     const solucion = [[60, 100, 120, 80, 90], [10, 20, 30, 15, 25]];
     const aux = mochilaCSV.procesar('./data/mochila.csv');
     expect(aux).to.deep.equal(solucion);

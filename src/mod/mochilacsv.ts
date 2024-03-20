@@ -4,6 +4,12 @@ import { Mochila } from './mochila.js'
 
 /**
  * Clase que representa la información de una mochila leída a través de un fichero CSV
+ * 
+ * @method initCapacidad Inicializa el atributo capacidad de la clase. Leyendo el archivo CSV, cuya ruta es pasada
+ *                       por parámetro.
+ * @method initElementos Inicializa el atributo elementos de la clase. Leyendo el archio CSV, cuya ruta es pasada
+ *                       por parámetro.
+ * @method initElementos Inicializa el atributo numElementos de la clase. Accediendo al length de elementos.
  */
 export class MochilaCSV extends Mochila {
   protected initCapacidad(fichero: string): void {
